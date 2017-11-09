@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CE2CCCAE5367FA03461CD23 /* Pods_FreeloTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4786F2B4E72AAE598642941 /* Pods_FreeloTests.framework */; };
+		9A14814D1FB4ACFB003FC7D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A14814C1FB4ACFB003FC7D4 /* GoogleService-Info.plist */; };
 		9AE97B9A1FA68D62006D2C82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE97B991FA68D62006D2C82 /* AppDelegate.swift */; };
 		9AE97B9C1FA68D62006D2C82 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE97B9B1FA68D62006D2C82 /* FirstViewController.swift */; };
 		9AE97B9E1FA68D62006D2C82 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE97B9D1FA68D62006D2C82 /* SecondViewController.swift */; };
@@ -15,6 +17,8 @@
 		9AE97BA61FA68D62006D2C82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AE97BA41FA68D62006D2C82 /* LaunchScreen.storyboard */; };
 		9AE97BB11FA68D62006D2C82 /* FreeloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE97BB01FA68D62006D2C82 /* FreeloTests.swift */; };
 		9AE97BBC1FA68D62006D2C82 /* FreeloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE97BBB1FA68D62006D2C82 /* FreeloUITests.swift */; };
+		B3576D13523F4ED867F91439 /* Pods_Freelo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 758EF916E72E5EF2700DF4F0 /* Pods_Freelo.framework */; };
+		F91AC8E2BCD0787A69BEC06D /* Pods_FreeloUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E1D3C5DB6867FDD44C34A26 /* Pods_FreeloUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E1D3C5DB6867FDD44C34A26 /* Pods_FreeloUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeloUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C513BFDD79CD6E95420A235 /* Pods-Freelo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Freelo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Freelo/Pods-Freelo.debug.xcconfig"; sourceTree = "<group>"; };
+		37D21D64E61D18F105A067D5 /* Pods-Freelo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Freelo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Freelo/Pods-Freelo.release.xcconfig"; sourceTree = "<group>"; };
+		41031978AE3030BA40CF7918 /* Pods-FreeloUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeloUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FreeloUITests/Pods-FreeloUITests.release.xcconfig"; sourceTree = "<group>"; };
+		758EF916E72E5EF2700DF4F0 /* Pods_Freelo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Freelo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A14814C1FB4ACFB003FC7D4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9AE97B961FA68D62006D2C82 /* Freelo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freelo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE97B991FA68D62006D2C82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AE97B9B1FA68D62006D2C82 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +59,10 @@
 		9AE97BB71FA68D62006D2C82 /* FreeloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE97BBB1FA68D62006D2C82 /* FreeloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeloUITests.swift; sourceTree = "<group>"; };
 		9AE97BBD1FA68D62006D2C82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C60E3624455CEA71525B2B6F /* Pods-FreeloTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeloTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FreeloTests/Pods-FreeloTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D7A32DCB1D2518262F8B1DBB /* Pods-FreeloTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeloTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FreeloTests/Pods-FreeloTests.release.xcconfig"; sourceTree = "<group>"; };
+		F4786F2B4E72AAE598642941 /* Pods_FreeloTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeloTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEC8AE5CD585B58F207B4FEF /* Pods-FreeloUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeloUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FreeloUITests/Pods-FreeloUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3576D13523F4ED867F91439 /* Pods_Freelo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CE2CCCAE5367FA03461CD23 /* Pods_FreeloTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +86,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F91AC8E2BCD0787A69BEC06D /* Pods_FreeloUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2330E09D0B55F0497EFE3B68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				758EF916E72E5EF2700DF4F0 /* Pods_Freelo.framework */,
+				F4786F2B4E72AAE598642941 /* Pods_FreeloTests.framework */,
+				0E1D3C5DB6867FDD44C34A26 /* Pods_FreeloUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55E75C3513D70CD413BEB87E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C513BFDD79CD6E95420A235 /* Pods-Freelo.debug.xcconfig */,
+				37D21D64E61D18F105A067D5 /* Pods-Freelo.release.xcconfig */,
+				C60E3624455CEA71525B2B6F /* Pods-FreeloTests.debug.xcconfig */,
+				D7A32DCB1D2518262F8B1DBB /* Pods-FreeloTests.release.xcconfig */,
+				FEC8AE5CD585B58F207B4FEF /* Pods-FreeloUITests.debug.xcconfig */,
+				41031978AE3030BA40CF7918 /* Pods-FreeloUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9AE97B8D1FA68D62006D2C82 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +123,8 @@
 				9AE97BAF1FA68D62006D2C82 /* FreeloTests */,
 				9AE97BBA1FA68D62006D2C82 /* FreeloUITests */,
 				9AE97B971FA68D62006D2C82 /* Products */,
+				55E75C3513D70CD413BEB87E /* Pods */,
+				2330E09D0B55F0497EFE3B68 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +141,7 @@
 		9AE97B981FA68D62006D2C82 /* Freelo */ = {
 			isa = PBXGroup;
 			children = (
+				9A14814C1FB4ACFB003FC7D4 /* GoogleService-Info.plist */,
 				9AE97B991FA68D62006D2C82 /* AppDelegate.swift */,
 				9AE97B9B1FA68D62006D2C82 /* FirstViewController.swift */,
 				9AE97B9D1FA68D62006D2C82 /* SecondViewController.swift */,
@@ -135,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9AE97BC01FA68D62006D2C82 /* Build configuration list for PBXNativeTarget "Freelo" */;
 			buildPhases = (
+				0DD5AF1BFEE34E661B82E213 /* [CP] Check Pods Manifest.lock */,
 				9AE97B921FA68D62006D2C82 /* Sources */,
 				9AE97B931FA68D62006D2C82 /* Frameworks */,
 				9AE97B941FA68D62006D2C82 /* Resources */,
+				FDF8D1A13A8280640AA4CB23 /* [CP] Embed Pods Frameworks */,
+				1FAA4513FE7E5648E773D2FC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9AE97BC31FA68D62006D2C82 /* Build configuration list for PBXNativeTarget "FreeloTests" */;
 			buildPhases = (
+				81778A1B7E4AB47CC8C34E9D /* [CP] Check Pods Manifest.lock */,
 				9AE97BA81FA68D62006D2C82 /* Sources */,
 				9AE97BA91FA68D62006D2C82 /* Frameworks */,
 				9AE97BAA1FA68D62006D2C82 /* Resources */,
+				07E799D816081EA168FEF2FE /* [CP] Embed Pods Frameworks */,
+				879AB6778C17889C7A6F4640 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9AE97BC61FA68D62006D2C82 /* Build configuration list for PBXNativeTarget "FreeloUITests" */;
 			buildPhases = (
+				BD7073FE2B1CF86AB4DC2A36 /* [CP] Check Pods Manifest.lock */,
 				9AE97BB31FA68D62006D2C82 /* Sources */,
 				9AE97BB41FA68D62006D2C82 /* Frameworks */,
 				9AE97BB51FA68D62006D2C82 /* Resources */,
+				1CAE05115A34B06F638E88C4 /* [CP] Embed Pods Frameworks */,
+				449D6F61453957A44F99507A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AE97BA61FA68D62006D2C82 /* LaunchScreen.storyboard in Resources */,
+				9A14814D1FB4ACFB003FC7D4 /* GoogleService-Info.plist in Resources */,
 				9AE97BA31FA68D62006D2C82 /* Assets.xcassets in Resources */,
 				9AE97BA11FA68D62006D2C82 /* Main.storyboard in Resources */,
 			);
@@ -256,6 +309,158 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07E799D816081EA168FEF2FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreeloTests/Pods-FreeloTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0DD5AF1BFEE34E661B82E213 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Freelo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1CAE05115A34B06F638E88C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreeloUITests/Pods-FreeloUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1FAA4513FE7E5648E773D2FC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Freelo/Pods-Freelo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		449D6F61453957A44F99507A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreeloUITests/Pods-FreeloUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81778A1B7E4AB47CC8C34E9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FreeloTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		879AB6778C17889C7A6F4640 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreeloTests/Pods-FreeloTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD7073FE2B1CF86AB4DC2A36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FreeloUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDF8D1A13A8280640AA4CB23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Freelo/Pods-Freelo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Freelo/Pods-Freelo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9AE97B921FA68D62006D2C82 /* Sources */ = {
@@ -428,6 +633,7 @@
 		};
 		9AE97BC11FA68D62006D2C82 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C513BFDD79CD6E95420A235 /* Pods-Freelo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -443,6 +649,7 @@
 		};
 		9AE97BC21FA68D62006D2C82 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37D21D64E61D18F105A067D5 /* Pods-Freelo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -458,6 +665,7 @@
 		};
 		9AE97BC41FA68D62006D2C82 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C60E3624455CEA71525B2B6F /* Pods-FreeloTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -475,6 +683,7 @@
 		};
 		9AE97BC51FA68D62006D2C82 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7A32DCB1D2518262F8B1DBB /* Pods-FreeloTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -492,6 +701,7 @@
 		};
 		9AE97BC71FA68D62006D2C82 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEC8AE5CD585B58F207B4FEF /* Pods-FreeloUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -508,6 +718,7 @@
 		};
 		9AE97BC81FA68D62006D2C82 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41031978AE3030BA40CF7918 /* Pods-FreeloUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
