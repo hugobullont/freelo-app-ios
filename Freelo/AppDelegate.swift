@@ -8,6 +8,8 @@
 
 import UIKit
 import Firebase
+let workRepo: WorkRepository = WorkRepository()
+let rewardRepo: RewardRepository = RewardRepository()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
