@@ -29,11 +29,11 @@ class RewardsViewController: UICollectionViewController {
 
         // Register cell classes
         //self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
+        //self.navigationController?.navigationBar.prefersLargeTitles = true
         // Do any additional setup after loading the view.
         self.title = "Rewards"
         rewardRepo.updateListOfRewards()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             // do stuff 2 seconds later
             self.rewards = rewardRepo.listOfRewards
         }

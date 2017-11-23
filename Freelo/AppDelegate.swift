@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 let workRepo: WorkRepository = WorkRepository()
 let rewardRepo: RewardRepository = RewardRepository()
+let catRepo: CategoryRepository = CategoryRepository()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

@@ -60,4 +60,18 @@ class Work {
         status = dictionary["status"] as! String
     }
     
+    func toDictionary() -> [String: Any] {
+        var dictionary = [String :Any]()
+        dictionary["idWork"] = idWork
+        dictionary["name"] = name
+        dictionary["description"] = description
+        dictionary["basePrice"] = basePrice
+        dictionary["pubPrice"] = pubPrice
+        dictionary["date"] = date
+        dictionary["createdBy"] = createdBy
+        dictionary["workedBy"] = workedBy
+        dictionary["idCategory"] = idCategory
+        dictionary["status"] = status
+        return dictionary
+    }
 }

@@ -29,11 +29,11 @@ class SearchViewController: UICollectionViewController {
         //workRepo.updateListOfWorks()
         // Register cell classes
         //self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-        self.navigationController?.navigationBar.prefersLargeTitles = true
+        //self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationController?.navigationBar.topItem?.title = "Freelo"
         self.title = "Search"
         workRepo.updateListOfWorks()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             // do stuff 2 seconds later
             self.works = workRepo.listOfWorks
         }
@@ -62,7 +62,18 @@ class SearchViewController: UICollectionViewController {
     */
 
     // MARK: UICollectionViewDataSource
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using [segue destinationViewController].
+        // Pass the selected object to the new view controller.
+        if segue.identifier == "showWork" {
+            let work = works[currentIndex]
+            let destination = segue.destination as! WorkViewController
+            destination.work = work
+            
+        }
+    }
+    
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -83,6 +94,11 @@ class SearchViewController: UICollectionViewController {
         cell.layer.borderWidth = 0.5
         cell.layer.borderColor = UIColor.lightGray.cgColor
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        currentIndex = indexPath.row
+        self.performSegue(withIdentifier: "showWork", sender: self)
     }
 
     // MARK: UICollectionViewDelegate

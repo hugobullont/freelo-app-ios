@@ -17,6 +17,10 @@
 		9A2B311A1FC687980059EB02 /* RewardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2B31191FC687980059EB02 /* RewardRepository.swift */; };
 		9A2B311C1FC6A0EB0059EB02 /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2B311B1FC6A0EB0059EB02 /* RewardsViewController.swift */; };
 		9A2B311E1FC6A16E0059EB02 /* RewardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2B311D1FC6A16E0059EB02 /* RewardCell.swift */; };
+		9A2B31201FC712C40059EB02 /* NewFreeloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2B311F1FC712C40059EB02 /* NewFreeloViewController.swift */; };
+		9A2B31221FC716DD0059EB02 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2B31211FC716DD0059EB02 /* Category.swift */; };
+		9A2B31241FC7184B0059EB02 /* CategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2B31231FC7184B0059EB02 /* CategoryRepository.swift */; };
+		9A2B312B1FC764130059EB02 /* WorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2B312A1FC764130059EB02 /* WorkViewController.swift */; };
 		9AE3DC441FB75D8E00B0BB50 /* WorkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3DC431FB75D8E00B0BB50 /* WorkRepository.swift */; };
 		9AE97B9A1FA68D62006D2C82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE97B991FA68D62006D2C82 /* AppDelegate.swift */; };
 		9AE97BA11FA68D62006D2C82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AE97B9F1FA68D62006D2C82 /* Main.storyboard */; };
@@ -60,6 +64,10 @@
 		9A2B31191FC687980059EB02 /* RewardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardRepository.swift; sourceTree = "<group>"; };
 		9A2B311B1FC6A0EB0059EB02 /* RewardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsViewController.swift; sourceTree = "<group>"; };
 		9A2B311D1FC6A16E0059EB02 /* RewardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardCell.swift; sourceTree = "<group>"; };
+		9A2B311F1FC712C40059EB02 /* NewFreeloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFreeloViewController.swift; sourceTree = "<group>"; };
+		9A2B31211FC716DD0059EB02 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		9A2B31231FC7184B0059EB02 /* CategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepository.swift; sourceTree = "<group>"; };
+		9A2B312A1FC764130059EB02 /* WorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkViewController.swift; sourceTree = "<group>"; };
 		9AE3DC431FB75D8E00B0BB50 /* WorkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkRepository.swift; sourceTree = "<group>"; };
 		9AE97B961FA68D62006D2C82 /* Freelo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freelo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE97B991FA68D62006D2C82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +145,8 @@
 				9A2B31171FC678EE0059EB02 /* SearchCell.swift */,
 				9A2B311B1FC6A0EB0059EB02 /* RewardsViewController.swift */,
 				9A2B311D1FC6A16E0059EB02 /* RewardCell.swift */,
+				9A2B311F1FC712C40059EB02 /* NewFreeloViewController.swift */,
+				9A2B312A1FC764130059EB02 /* WorkViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -146,6 +156,7 @@
 			children = (
 				9A1481D41FB55DB1003FC7D4 /* Work.swift */,
 				9A1481D61FB560C8003FC7D4 /* Reward.swift */,
+				9A2B31211FC716DD0059EB02 /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -155,6 +166,7 @@
 			children = (
 				9AE3DC431FB75D8E00B0BB50 /* WorkRepository.swift */,
 				9A2B31191FC687980059EB02 /* RewardRepository.swift */,
+				9A2B31231FC7184B0059EB02 /* CategoryRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -535,11 +547,15 @@
 				9A1481D51FB55DB1003FC7D4 /* Work.swift in Sources */,
 				9A2B31141FC65F660059EB02 /* SessionVariables.swift in Sources */,
 				9A2B311E1FC6A16E0059EB02 /* RewardCell.swift in Sources */,
+				9A2B312B1FC764130059EB02 /* WorkViewController.swift in Sources */,
+				9A2B31241FC7184B0059EB02 /* CategoryRepository.swift in Sources */,
+				9A2B31201FC712C40059EB02 /* NewFreeloViewController.swift in Sources */,
 				9A2B31181FC678EE0059EB02 /* SearchCell.swift in Sources */,
 				9AE97B9A1FA68D62006D2C82 /* AppDelegate.swift in Sources */,
 				9A1481D71FB560C8003FC7D4 /* Reward.swift in Sources */,
 				9A2B311A1FC687980059EB02 /* RewardRepository.swift in Sources */,
 				9AE3DC441FB75D8E00B0BB50 /* WorkRepository.swift in Sources */,
+				9A2B31221FC716DD0059EB02 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

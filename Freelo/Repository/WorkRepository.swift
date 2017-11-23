@@ -14,6 +14,17 @@ class WorkRepository {
      var listOfWorks: [Work] = []
      var publishedWorks: [Work] = []
     
+    func addWorkToDatabase(workName: String, workDescription: String, workBasePrice: Double, workIdCategory: String) {
+        let pubPrice: Double = workBasePrice * 0.85
+        let key = Database.database().reference().child("works").childByAutoId().key
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd-MM-yyyy H:mm"
+        let dateString = formatter.string(from: date)
+        
+        let work = Work.init(id: key, workName: workName, workDescription: workDescription, workBasePrice: workBasePrice, workPubPrice: pubPrice, workDate: dateString, workCreatedBy: SessionVariables.currentUserId, workWorkedBy: "noBody", workIdCategory: workIdCategory, workStatus: "open")
+        Database.database().reference().child("works").child(key).setValue(work.toDictionary())
+    }
     
     func updateListOfWorks() {
         

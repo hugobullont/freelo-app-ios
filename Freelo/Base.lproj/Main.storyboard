@@ -79,6 +79,9 @@
                     <tabBarItem key="tabBarItem" systemItem="search" id="CA6-1O-sxV"/>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="4a4-o9-Hon" kind="show" identifier="showWork" id="Exi-1w-RHF"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PCi-Hi-lgX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -178,54 +181,209 @@
                         </connections>
                     </collectionView>
                     <tabBarItem key="tabBarItem" title="Rewards" image="rewards" id="SQX-Rw-3mW"/>
+                    <connections>
+                        <segue destination="QDF-9K-jke" kind="show" identifier="showReward" id="ZLz-Un-vXE"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gpw-Lf-FyR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2268.75" y="-446.83098591549299"/>
         </scene>
+        <!--Work View Controller-->
+        <scene sceneID="00g-rg-PA7">
+            <objects>
+                <viewController id="4a4-o9-Hon" customClass="WorkViewController" customModule="Freelo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vH6-SF-kP1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ai-aM-BLE">
+                                <rect key="frame" x="16" y="86" width="288" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¿Cuánto Ganarás?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98P-To-FWO">
+                                <rect key="frame" x="16" y="126" width="140" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNZ-ii-pKr">
+                                <rect key="frame" x="199" y="126" width="105" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Categoría:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzs-4j-Mhc">
+                                <rect key="frame" x="16" y="174" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJx-5m-Sgv">
+                                <rect key="frame" x="16" y="203" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descripción:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfD-iW-J8p">
+                                <rect key="frame" x="16" y="232" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L19-g3-ncg">
+                                <rect key="frame" x="16" y="261" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="HEg-Zb-NFC"/>
+                    </view>
+                    <connections>
+                        <outlet property="categoryLabel" destination="SJx-5m-Sgv" id="Xwy-nG-cRt"/>
+                        <outlet property="nameLabel" destination="6Ai-aM-BLE" id="pqJ-Fn-KJ5"/>
+                        <outlet property="pubPriceLabel" destination="wNZ-ii-pKr" id="9Ad-8S-JT2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N1H-K8-TT4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3080.625" y="390.84507042253523"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BF9-oa-lvq">
+            <objects>
+                <viewController id="QDF-9K-jke" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8I6-0a-Lu0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="U8B-8e-aq1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JyX-iX-8NR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2269" y="391"/>
+        </scene>
         <!--New Freelo-->
         <scene sceneID="s4L-0D-VJA">
             <objects>
-                <viewController id="QLQ-Gf-ea5" sceneMemberID="viewController">
+                <viewController id="QLQ-Gf-ea5" customClass="NewFreeloViewController" customModule="Freelo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MXf-G4-rh0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fc4-ie-T42">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fc4-ie-T42">
                                 <rect key="frame" x="16" y="115" width="288" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Df-Wo-DXU">
-                                <rect key="frame" x="16" y="170" width="288" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Df-Wo-DXU">
+                                <rect key="frame" x="16" y="182" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sIu-X3-0bS">
-                                <rect key="frame" x="16" y="226" width="288" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sIu-X3-0bS">
+                                <rect key="frame" x="16" y="249" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RN8-qh-LGm">
-                                <rect key="frame" x="16" y="301" width="288" height="83"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rBb-uP-f20">
-                                <rect key="frame" x="137" y="392" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rBb-uP-f20">
+                                <rect key="frame" x="16" y="443" width="288" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Crear Freelo"/>
+                                <connections>
+                                    <action selector="createWorkEvent:" destination="QLQ-Gf-ea5" eventType="touchUpInside" id="uEM-90-3lT"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombra tu Freelo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdc-uF-u8a">
+                                <rect key="frame" x="16" y="86" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Describe tu Freelo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwd-6u-9Kd">
+                                <rect key="frame" x="16" y="153" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Cuánto Invertirás?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLX-uh-8k3">
+                                <rect key="frame" x="16" y="220" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escoge una Categoría" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9A-HR-88z">
+                                <rect key="frame" x="16" y="287" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RN8-qh-LGm">
+                                <rect key="frame" x="16" y="316" width="288" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="ECO-EE-dM9"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="QLQ-Gf-ea5" id="URN-Jq-2ps"/>
+                                    <outlet property="delegate" destination="QLQ-Gf-ea5" id="1YI-e7-qSO"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bYe-5R-trH" firstAttribute="trailing" secondItem="Fc4-ie-T42" secondAttribute="trailing" constant="16" id="14B-5A-1rh"/>
+                            <constraint firstItem="xwd-6u-9Kd" firstAttribute="top" secondItem="Fc4-ie-T42" secondAttribute="bottom" constant="8" id="2KS-fQ-R6g"/>
+                            <constraint firstItem="bYe-5R-trH" firstAttribute="trailing" secondItem="rBb-uP-f20" secondAttribute="trailing" constant="16" id="5eN-yg-O7L"/>
+                            <constraint firstItem="I9A-HR-88z" firstAttribute="top" secondItem="sIu-X3-0bS" secondAttribute="bottom" constant="8" id="7sR-YC-woa"/>
+                            <constraint firstItem="bYe-5R-trH" firstAttribute="trailing" secondItem="RN8-qh-LGm" secondAttribute="trailing" constant="16" id="Cbq-Uj-m8f"/>
+                            <constraint firstItem="WLX-uh-8k3" firstAttribute="leading" secondItem="bYe-5R-trH" secondAttribute="leading" constant="16" id="EWw-w6-iG8"/>
+                            <constraint firstItem="I9A-HR-88z" firstAttribute="leading" secondItem="bYe-5R-trH" secondAttribute="leading" constant="16" id="Gw4-2g-ZdD"/>
+                            <constraint firstItem="bYe-5R-trH" firstAttribute="trailing" secondItem="xwd-6u-9Kd" secondAttribute="trailing" constant="16" id="GxE-Vc-gI0"/>
+                            <constraint firstItem="bYe-5R-trH" firstAttribute="trailing" secondItem="hdc-uF-u8a" secondAttribute="trailing" constant="16" id="J4O-MD-lXn"/>
+                            <constraint firstItem="bYe-5R-trH" firstAttribute="trailing" secondItem="sIu-X3-0bS" secondAttribute="trailing" constant="16" id="LfS-bp-JND"/>
+                            <constraint firstItem="bYe-5R-trH" firstAttribute="trailing" secondItem="WLX-uh-8k3" secondAttribute="trailing" constant="16" id="MP4-UK-zgH"/>
+                            <constraint firstItem="bYe-5R-trH" firstAttribute="trailing" secondItem="I9A-HR-88z" secondAttribute="trailing" constant="16" id="R2v-55-KtD"/>
+                            <constraint firstItem="rBb-uP-f20" firstAttribute="leading" secondItem="bYe-5R-trH" secondAttribute="leading" constant="16" id="Tlt-k4-Dyu"/>
+                            <constraint firstItem="RN8-qh-LGm" firstAttribute="leading" secondItem="bYe-5R-trH" secondAttribute="leading" constant="16" id="UaD-go-1vQ"/>
+                            <constraint firstItem="0Df-Wo-DXU" firstAttribute="top" secondItem="xwd-6u-9Kd" secondAttribute="bottom" constant="8" id="Xlr-U8-oCD"/>
+                            <constraint firstItem="rBb-uP-f20" firstAttribute="top" secondItem="RN8-qh-LGm" secondAttribute="bottom" constant="42" id="Ydv-mb-f6x"/>
+                            <constraint firstItem="sIu-X3-0bS" firstAttribute="leading" secondItem="bYe-5R-trH" secondAttribute="leading" constant="16" id="cBe-dF-CUc"/>
+                            <constraint firstItem="0Df-Wo-DXU" firstAttribute="leading" secondItem="bYe-5R-trH" secondAttribute="leading" constant="16" id="eex-dm-wXl"/>
+                            <constraint firstItem="RN8-qh-LGm" firstAttribute="top" secondItem="I9A-HR-88z" secondAttribute="bottom" constant="8" id="jfk-2p-0c6"/>
+                            <constraint firstItem="WLX-uh-8k3" firstAttribute="top" secondItem="0Df-Wo-DXU" secondAttribute="bottom" constant="8" id="l6S-N2-RE6"/>
+                            <constraint firstItem="xwd-6u-9Kd" firstAttribute="leading" secondItem="bYe-5R-trH" secondAttribute="leading" constant="16" id="lBE-sf-Sp5"/>
+                            <constraint firstItem="hdc-uF-u8a" firstAttribute="top" secondItem="bYe-5R-trH" secondAttribute="top" constant="22" id="lOL-aN-lwC"/>
+                            <constraint firstItem="Fc4-ie-T42" firstAttribute="leading" secondItem="bYe-5R-trH" secondAttribute="leading" constant="16" id="lQY-SK-jaL"/>
+                            <constraint firstItem="hdc-uF-u8a" firstAttribute="leading" secondItem="bYe-5R-trH" secondAttribute="leading" constant="16" id="pYF-W1-kvC"/>
+                            <constraint firstItem="sIu-X3-0bS" firstAttribute="top" secondItem="WLX-uh-8k3" secondAttribute="bottom" constant="8" id="y9u-Ia-ZWq"/>
+                            <constraint firstItem="Fc4-ie-T42" firstAttribute="top" secondItem="hdc-uF-u8a" secondAttribute="bottom" constant="8" id="yD6-aa-LHb"/>
+                            <constraint firstItem="bYe-5R-trH" firstAttribute="trailing" secondItem="0Df-Wo-DXU" secondAttribute="trailing" constant="16" id="ypT-G9-Mdj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bYe-5R-trH"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="New Freelo" image="newFreelo" id="Zn8-Gq-cnI"/>
+                    <connections>
+                        <outlet property="categoriesPickerView" destination="RN8-qh-LGm" id="qSU-NK-hRc"/>
+                        <outlet property="createFreeloButton" destination="rBb-uP-f20" id="Sdb-8F-cu6"/>
+                        <outlet property="descriptionTextField" destination="0Df-Wo-DXU" id="52F-Za-FME"/>
+                        <outlet property="nameTextField" destination="Fc4-ie-T42" id="w2o-0t-chO"/>
+                        <outlet property="priceTextField" destination="sIu-X3-0bS" id="QbI-Yb-iTa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sCM-rc-apC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
